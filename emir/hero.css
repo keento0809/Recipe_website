@@ -1,0 +1,68 @@
+.container{
+    margin-top: 35px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.foti{
+    
+}
+.h1{
+    margin-right: 700px;
+    margin-top: -40px;
+    background-color: white;
+}
+
+.yazi{
+    position: absolute;
+}
+
+.yazi1{
+    width: 50%;
+}
+
+.iki{
+    display: flex;
+    flex-direction: column;
+    border-left: 1.5px solid black;
+}
+
+.bir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-top:  25px
+}
+.umeshu{
+    width: 25%;
+}
+
+p{
+    width: 45%;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.ikii{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.caipirinha{
+    width: 25%;
+}
+.uc{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 25px;
+
+}
+.raki{
+    width: 25%;
+}
