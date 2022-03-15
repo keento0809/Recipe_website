@@ -1,0 +1,101 @@
+:root {
+  --colorBlack: #0d0d0d;
+  --colorWhite: #fff;
+  --colorRed: #e71f3d;
+  --colorGrey: #e1dfdd;
+  --colorTest: violet;
+  --fontSizeTitle: 3rem;
+  --letterSpacingRegular: -1px;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 700;
+  --paddingForWrapper: 0 16px;
+}
+
+body {
+  height: 300vh;
+}
+
+header {
+  letter-spacing: var(--letterSpacingRegular);
+  font-weight: var(--fontWeightRegular);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  background: var(--colorTest);
+}
+
+.header-wrapper {
+}
+
+.title-section {
+  /* font-size: var(--fontSizeTitle);
+  padding: 0.5rem 0; */
+  display: none;
+}
+
+.title-section.showing {
+  font-size: var(--fontSizeTitle);
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  transform: none;
+  transition: all 0.5s ease;
+}
+
+.menuBar {
+  padding-left: 0.5rem;
+}
+
+.menuBar > span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  margin-bottom: 2px;
+  background: var(--colorRed);
+}
+
+.menuBar,
+.navMenu {
+  margin-right: 1rem;
+}
+
+.navMenu.devide {
+  color: var(--colorGrey);
+  font-weight: var(--fontWeightLight);
+}
+
+.nav-menu,
+.title-in-nav {
+  display: flex;
+}
+
+.nav-menu.hidden {
+  display: none;
+}
+
+.title-in-nav {
+  display: none;
+}
+
+.title-in-nav.showing {
+  display: block;
+}
+
+/* test */
+.main {
+  padding-top: 112px;
+}
+
+#target {
+  padding-top: 200px;
+}
