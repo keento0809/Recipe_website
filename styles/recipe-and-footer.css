@@ -1,0 +1,159 @@
+body {
+  font-family: 'Noto Serif', serif;
+  color: rgba(0, 0, 0, .95);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.recipe-title, .recipe-subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 16px;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.recipe-subtitle {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.recipe-container {
+  max-width: 1310px;
+  padding: 0 64px;
+  margin: 0 auto;
+}
+
+.recipe-summary {
+  color: rgba(0, 0, 0, .7);
+  margin-bottom: 16px;
+}
+
+.recipe-author {
+  margin-bottom: 16px;
+}
+
+.recipe-preview {
+  display: flex;
+  gap: 32px;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.recipe-figure {
+  width: 70%;
+}
+
+.recipe-figure img {
+  max-width: 100%;
+}
+
+.recipe-duration {
+  flex-grow: 1;
+  background: rgba(0, 0, 0, .03);
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid red;
+  height: 200px;
+  border-radius: 8px;
+  font-size: .9rem;
+}
+
+.recipe-duration p {
+  line-height: 2.5rem;
+}
+
+.recipe-duration-headline {
+  font-weight: 700;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid red;
+}
+
+.recipe-duration-highlight {
+  font-weight: 700;
+}
+
+.ingredients {
+  margin-top: 64px;
+  border-top: 1px solid rgba(0, 0, 0, .4);
+  padding-top: 64px;
+}
+
+.ingredients label {
+  display: block;
+  line-height: 2.5rem;
+}
+
+.ingredients input {
+  width: 16px;
+  height: 16px;
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.directions {
+  margin-top: 64px;
+  border-top: 1px solid rgba(0, 0, 0, .4);
+  padding-top: 64px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24px
+}
+
+.direction-step h4 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 1px solid red;
+  padding-bottom: 2px;
+}
+
+footer {
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  height: 280px;
+  padding: 64px 0;
+  box-sizing: border-box;
+  margin-top: 64px;
+}
+
+.footer-content {
+  max-width: 1310px;
+  padding: 0 64px;
+  margin: 0 auto;
+}
+
+.footer-content h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.social-medias {
+  display: flex;
+  max-width: 400px;
+  margin: 40px auto 0 auto;
+}
+
+.social-medias a {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.madeby {
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+  font-size: .9rem;
+}
+
+.love {
+  height: .9rem;
+}
