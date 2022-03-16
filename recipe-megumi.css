@@ -1,0 +1,29 @@
+
+/* Event section (Only for Megumi) */
+.event {
+  margin-top: 64px;
+  border-top: 1px solid rgba(0, 0, 0, .4);
+  padding-top: 64px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24px
+}
+
+.event-subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 16px;
+}
+
+.event-wrap h4{
+  margin-bottom: 24px;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 1px solid red;
+  padding-bottom: 2px;
+}
+
+.event-video-wrap {
+  margin-top: 30px;
+}
