@@ -4,10 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Recipes</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Font Awesome Ver6.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Our styles -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/carousel2.css">
+    <link rel="stylesheet" href="styles/recipe-and-footer.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <script src="index.js"></script>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="header-wrapper">
+          <section class="title-section showing">
+            <h2>Title</h2>
+          </section>
+          <section class="nav-section">
+            <div class="menuBar"><span></span><span></span><span></span></div>
+            <div class="nav-menu">
+              <h4 class="navMenu">Explore</h4>
+              <h4 class="navMenu devide">|</h4>
+              <h4 class="navMenu">Recipes</h4>
+              <h4 class="navMenu">About Us</h4>
+            </div>
+            <div class="title-in-nav">
+              <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
+              <h4>Title</h4>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    
+    <!-- HERO -->
+    <div class="hero-container">
+      <div class="foti">
+        <img src="https://s3.amazonaws.com/gattravelblog/wp-content/uploads/2018/10/12121817/640x640-Sake-pouring.jpg">
+        <div class="yazi">
+          <div class="baslik"><h1 class="h1">Have you ever tried Sake?</h1></div>
+          <p class="yazi1">Sake, also spelled saké also referred to as Japanese rice wine is an alcoholic beverage of Japanese origin made by fermenting rice that has been polished to remove the bran. </p>
+        </div>
+      </div>
+      <div class="iki">
+        <div class="bir">
+          <img class="umeshu" src="https://www.tokyoweekender.com/wp-content/uploads/2020/07/umeshu-rock.jpg">
+          <p>Umeshu is a Japanese liqueur made by steeping ume plums in liquor and sugar.</p>
+        </div>
+        <div class="ikii">
+          <img class="caipirinha" src="https://www.liquor.com/thmb/OaPExqWCCu-1piry-BVdEOj7hdQ=/735x0/caipirnha-720x720-primary-40900f56782b4c1d8c79494c9b413f9c.jpg">
+          <p>Caipirinha is Brazil's national cocktail, made with cachaça (sugarcane hard liquor), sugar, and lime.</p>
+        </div>
+        <div class="uc">
+          <img class="raki" src="https://i.hurimg.com/i/hdn/75/0x0/59c7c5d145d2a027e83b1781.jpg">
+          <p>Raki is an alcoholic drink made of twice-distilled grapes and anise.It is the national drink of Turkey. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <hr class="carousel-hr">
+    <section class="carousel">
+      <button class="next"><i class="fa-solid fa-caret-right fa-2xl"></i></button>
+      <button class="prev"><i class="fa-solid fa-caret-left fa-2xl"></i></button>
+      <div class="carousel-container">
+        <div class="img-wrap" style="display: inline-block;">
+          <a href="#"><img src="https://i.pinimg.com/564x/71/07/82/71078273ce88c6beb432a04c9fd45e9b.jpg"/></a>
+        </div>
+        <div class="img-wrap">
+          <a href="#"><img src="https://i.pinimg.com/236x/d5/a8/8c/d5a88cc203a7809aae0895fec05f1f65.jpg"/></a>
+        </div>
+        <div class="img-wrap">
+          <a href="#"><img src="https://i.pinimg.com/236x/c8/10/39/c81039962a7b35eaab6ee291348edb92.jpg"/></a> 
+        </div>
+        <div class="img-wrap">
+          <a href="#"><img src="images/ume.jpg"/></a>
+        </div>
+    
+      </div>
+      <div class="description">
+        <h2 class="carousel-heading">What would you like to cook today?</h2>
+        <p class="carousel-description">Here are some recommendations from us. You can cook these meals easily!</p><p class="carousel-description">Of course, they are sooooooo tasty;)</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <h4>Recipes</h4>
+        <section class="social-medias">
+          <a href="#facebook">
+            <img src="images/facebook-icon.svg" alt="Facebook" />
+          </a>
+          <a href="#twitter">
+            <img src="images/twitter-icon.svg" alt="Twitter" />
+          </a>
+          <a href="#youtube">
+            <img src="images/youtube-icon.svg" alt="Youtube" />
+          </a>
+          <a href="#instagram">
+            <img src="images/instagram-icon.svg" alt="Instagram" />
+          </a>
+        </section>
+        <p class="madeby">
+          Made with <img class="love" src="images/heart.svg" alt="Love"> by Emir, Kento, Maurício & Megumi
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/carousel2.js"></script>
   </body>
 </html>
