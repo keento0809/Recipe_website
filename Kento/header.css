@@ -34,9 +34,6 @@ header {
   /* background: var(--colorTest); */
 }
 
-.header-wrapper {
-}
-
 .title-section {
   /* font-size: var(--fontSizeTitle);
   padding: 0.5rem 0; */
@@ -115,6 +112,10 @@ header {
   visibility: visible;
   padding: 1rem 0.5rem;
   opacity: 1;
+}
+
+.dropdown > a:hover {
+  text-decoration: underline;
 }
 
 .navMenu > a:hover {
