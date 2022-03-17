@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipes - Mauricio</title>
+    <title>Recipes - Kento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CDN of AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../mauricio//reset.css" />
     <link rel="stylesheet" href="../mauricio/style.css" />
     <link
@@ -23,8 +25,14 @@
     <!-- Header will come here! -->
     <div class="recipe-container">
       <article>
-        <h2 class="recipe-title">Yaki-Udon</h2>
-        <p class="recipe-summary">
+        <h2 class="recipe-title" data-aos="fade-down" data-aos-duration="1500">
+          Yaki-Udon
+        </h2>
+        <p
+          class="recipe-summary"
+          data-aos="zoom-out-left"
+          data-aos-duration="2000"
+        >
           If you’re a fan of noodles then you are going to LOVE this Yaki Udon
           Stir-Fry! This dish is made with Udon noodles which are thick and have
           a silky smooth texture that is very “slurpable” and the entire recipe
@@ -35,13 +43,27 @@
           ever go out to an Izakaya (Japanese pubs) you’ll often see Yaki Udon
           on the menu.
         </p>
-        <p class="recipe-author">By: Jess</p>
+        <p
+          class="recipe-author"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+        >
+          By: Jess
+        </p>
         <section class="recipe-preview">
-          <figure class="recipe-figure">
+          <figure
+            class="recipe-figure"
+            data-aos="flip-right"
+            data-aos-duration="2500"
+          >
             <img src="../images/yaki-udon-img.jpeg" alt="Yaki-Udon" />
             <figcaption>CREDIT: PHOTO BY Jess</figcaption>
           </figure>
-          <div class="recipe-duration">
+          <div
+            class="recipe-duration"
+            data-aos="flip-left"
+            data-aos-duration="2500"
+          >
             <h3 class="recipe-duration-headline">Recipe Quick Facts</h3>
             <p>
               <span class="recipe-duration-highlight">Active:</span> 10 mins
@@ -50,7 +72,11 @@
             <p><span class="recipe-duration-highlight">Servings:</span> 1</p>
           </div>
         </section>
-        <section class="ingredients">
+        <section
+          class="ingredients"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h3 class="recipe-subtitle">Ingredients</h3>
           <label> <input type="checkbox" />Udon noodles </label>
           <label> <input type="checkbox" />Scallions</label>
@@ -59,7 +85,7 @@
           <label> <input type="checkbox" />Baby bok choy</label>
           <label> <input type="checkbox" />Stir fry sauce</label>
         </section>
-        <section class="directions">
+        <section class="directions" data-aos="fade-up" data-aos-duration="3000">
           <h3 class="recipe-subtitle">Directions</h3>
           <div class="direction-step">
             <h4>Step 1</h4>
@@ -116,6 +142,11 @@
       </div>
     </footer>
 
+    <!-- CDN of AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- scripts are loaded after everything -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
