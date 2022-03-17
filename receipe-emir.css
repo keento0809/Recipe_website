@@ -171,3 +171,43 @@ body {
   .love {
     height: .9rem;
   }
+
+  .overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+  }
+
+  .modal{
+    text-align: center;
+  
+  }
+
+  #close{
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    height: 4%;
+    width: 4%;
+    border: none;
+  }
+
+  
+
+
+
+
+
+
+
