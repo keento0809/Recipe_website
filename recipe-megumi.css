@@ -1,5 +1,13 @@
+/* Directions */
+.curry-udon-wrapper{
+  margin-top: 50px;
+}
 
-/* Event section (Only for Megumi) */
+.curry-udon-wrapper img {
+  width: 300px;
+}
+
+/* Event section*/
 .event {
   margin-top: 64px;
   border-top: 1px solid rgba(0, 0, 0, .4);
@@ -14,6 +22,9 @@
   font-weight: 700;
   line-height: 3rem;
   margin-bottom: 16px;
+}
+.event-wrap {
+  position: relative;
 }
 
 .event-wrap h4{
@@ -31,3 +42,55 @@
 .googlemap-yamagata {
   margin-top: 30px;
 }
+
+.register-imoni {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+}
+
+.register-imoni:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+  transform: scale(0.9);
+}
+
+.modal-for-imoni {
+  width: 800px;
+  height: 200px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: white;
+  position: absolute;
+  left: 360px;
+  bottom: 100px;
+  padding: 20px 0;
+}
+
+.modal-for-imoni p {
+  padding: 20px 20px;
+}
+
+.close-imoni-modal {
+  padding: 10px;
+  /* font-size: 1.1rem; */
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  cursor: pointer;
+}
+
+.close-imoni-modal:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+  transform: scale(0.9);
+}
+
+
