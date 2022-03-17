@@ -1,3 +1,7 @@
+.recipe-container {
+  padding-top: 96px;
+}
+
 /* img */
 .recipe-figure > img {
   cursor: pointer;

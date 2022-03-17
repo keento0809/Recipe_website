@@ -1,18 +1,15 @@
 :root {
   --colorBlack: #0d0d0d;
   --colorWhite: #fff;
+  --colorBackground: rgba(255, 255, 255, 0.8);
   --colorRed: #e71f3d;
   --colorGrey: #e1dfdd;
   --colorTest: violet;
-  --fontSizeTitle: 3rem;
+  --fontSizeTitle: 2rem;
   --letterSpacingRegular: -1px;
   --fontWeightLight: 300;
   --fontWeightRegular: 700;
   --paddingForWrapper: 0 16px;
-}
-
-body {
-  height: 300vh;
 }
 
 a {
@@ -26,30 +23,28 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
+  background: var(--colorBackground);
 }
 
 .header-container {
   width: 90%;
   margin: 0 auto;
-  /* background: var(--colorTest); */
 }
 
 .title-section {
-  /* font-size: var(--fontSizeTitle);
-  padding: 0.5rem 0; */
+  padding-top: 1rem;
   display: none;
 }
 
 .title-section.showing {
   font-size: var(--fontSizeTitle);
-  padding: 0.5rem 0;
   display: block;
 }
 
 .nav-section {
   display: flex;
   align-items: center;
-  /* padding: 1rem 0; */
   transform: none;
   transition: all 0.5s ease;
 }
