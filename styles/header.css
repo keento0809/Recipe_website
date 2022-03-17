@@ -1,14 +1,23 @@
 :root {
   --colorBlack: #0d0d0d;
   --colorWhite: #fff;
-  --colorBackGround: rgba(255, 255, 255, 0.7);
   --colorRed: #e71f3d;
   --colorGrey: #e1dfdd;
+  --colorTest: violet;
   --fontSizeTitle: 3rem;
   --letterSpacingRegular: -1px;
   --fontWeightLight: 300;
   --fontWeightRegular: 700;
   --paddingForWrapper: 0 16px;
+}
+
+body {
+  height: 300vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -17,38 +26,36 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 101;
-  background: var(--colorBackGround);
 }
 
 .header-container {
   width: 90%;
   margin: 0 auto;
+  /* background: var(--colorTest); */
 }
 
 .title-section {
+  /* font-size: var(--fontSizeTitle);
+  padding: 0.5rem 0; */
   display: none;
-  padding-top: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
 }
 
 .title-section.showing {
-  /* font-size: var(--fontSizeTitle); */
-  /* padding: 0.5rem 0; */
+  font-size: var(--fontSizeTitle);
+  padding: 0.5rem 0;
   display: block;
 }
 
 .nav-section {
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   transform: none;
   transition: all 0.5s ease;
 }
 
 .menuBar {
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .menuBar > span {
@@ -59,15 +66,54 @@ header {
   background: var(--colorRed);
 }
 
-.menuBar,
 .navMenu {
-  margin-right: 1rem;
-  cursor: pointer;
+  padding: 1rem 0.5rem;
 }
 
 .navMenu.devide {
   color: var(--colorGrey);
   font-weight: var(--fontWeightLight);
+}
+
+.navMenu > a,
+.navMenu > a > h4 {
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0, 1, 0.1, 0.98);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  /* background: violet; */
+  transition: transform 0.3s ease;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+  /* display: none; */
+  visibility: hidden;
+  transform: translateY(-200%);
+}
+
+.dp:hover .dropdown {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+
+.dropdown > a {
+  transform: none;
+  display: block;
+  visibility: visible;
+  padding: 1rem 0.5rem;
+  opacity: 1;
+}
+
+.dropdown > a:hover {
+  text-decoration: underline;
+}
+
+.navMenu > a:hover {
+  border-bottom: 1px solid #000;
 }
 
 .nav-menu,
@@ -81,6 +127,7 @@ header {
 
 .title-in-nav {
   display: none;
+  padding: 1rem 0.5rem;
 }
 
 .title-in-nav.showing {
