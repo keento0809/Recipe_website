@@ -13,9 +13,10 @@
     />
     <!-- CDN of AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../mauricio//reset.css" />
-    <link rel="stylesheet" href="../mauricio/style.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/recipe-and-footer.css" />
     <link rel="stylesheet" href="kento-modal.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
     <link
       rel="shortcut icon"
       href="../mauricio/favicon.ico"
@@ -26,6 +27,28 @@
   </head>
   <body>
     <!-- Header will come here! -->
+    <header>
+      <div class="header-container">
+        <div class="header-wrapper">
+          <section class="title-section showing">
+            <h2>Global Kitchen</h2>
+          </section>
+          <section class="nav-section">
+            <div class="menuBar"><span></span><span></span><span></span></div>
+            <div class="nav-menu">
+              <h4 class="navMenu">Explore</h4>
+              <h4 class="navMenu devide">|</h4>
+              <h4 class="navMenu">Recipes</h4>
+              <h4 class="navMenu">About Us</h4>
+            </div>
+            <div class="title-in-nav">
+              <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
+              <h4>Global Kitchen</h4>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
     <div class="recipe-container">
       <article>
         <h2 class="recipe-title" data-aos="fade-down" data-aos-duration="1500">
@@ -227,6 +250,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="../mauricio/index.js"></script>
+    <script src="../scripts/header.js"></script>
     <script src="kento-index.js"></script>
   </body>
 </html>

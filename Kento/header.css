@@ -1,18 +1,14 @@
 :root {
   --colorBlack: #0d0d0d;
   --colorWhite: #fff;
+  --colorBackground: rgba(255, 255, 255, 0.7);
   --colorRed: #e71f3d;
   --colorGrey: #e1dfdd;
-  --colorTest: violet;
   --fontSizeTitle: 3rem;
   --letterSpacingRegular: -1px;
   --fontWeightLight: 300;
   --fontWeightRegular: 700;
   --paddingForWrapper: 0 16px;
-}
-
-body {
-  height: 300vh;
 }
 
 a {
@@ -31,7 +27,7 @@ header {
 .header-container {
   width: 90%;
   margin: 0 auto;
-  /* background: var(--colorTest); */
+  background: var(--colorBackground);
 }
 
 .title-section {
