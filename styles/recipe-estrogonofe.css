@@ -1,0 +1,10 @@
+.step-picture-box {
+  display: flex;
+  gap: 16px;
+  max-width: 50%;
+  margin-top: 24px;
+}
+
+.step-picture img {
+  width: 100%;
+}

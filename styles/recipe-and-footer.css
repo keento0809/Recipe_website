@@ -37,6 +37,12 @@ body {
   margin-bottom: 16px;
 }
 
+.recipe-author strong {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .recipe-preview {
   display: flex;
   gap: 32px;
@@ -46,6 +52,11 @@ body {
 
 .recipe-figure {
   width: 70%;
+}
+
+.recipe-figure figcaption {
+  font-size: .8rem;
+  font-style: italic;
 }
 
 .recipe-figure img {
@@ -156,4 +167,63 @@ footer {
 
 .love {
   height: .9rem;
+}
+
+.about-author {
+  display: none;
+  position: absolute;
+  margin: -16px 0 0 16px;
+}
+
+.about-author-pic img {
+  width: 100%;
+}
+
+.about-author-inner {
+  display: flex;
+  background: white;
+  border: 1px solid rgba(255, 0, 0, .5);
+  padding: 16px;
+  width: 450px;
+  box-sizing: border-box;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.about-author-inner p {
+  font-size: .8rem;
+}
+
+.about-author-inner h4 {
+  font-weight: 700;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(255, 0, 0, .5);
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.about-author-inner .close-button {
+  color: rgba(255, 0, 0, .5);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.about-author-inner .close-button:hover {
+  color: red;
+}
+
+.about-social-medias {
+  display: flex;
+  max-width: 115px;
+}
+
+.about-social-medias a {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.about-social-medias img {
+  width: 30px;
 }
