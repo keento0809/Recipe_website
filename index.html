@@ -23,12 +23,12 @@
       referrerpolicy="no-referrer"
     />
     <!-- Our styles -->
-    <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/carousel2.css" />
     <link rel="stylesheet" href="styles/recipe-and-footer.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="receipe-emir.css">
+    <link rel="stylesheet" href="receipe-emir.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -39,25 +39,29 @@
             <h2><a href="#">Global Kitchen</a></h2>
           </section>
           <section class="nav-section">
-            <div class="menuBar"><span></span><span></span><span></span></div>
+            <div class="menuBar navH4">
+              <span></span><span></span><span></span>
+            </div>
             <div class="nav-menu">
               <div class="navMenu">
-                <h4>Explore</h4>
+                <h4 class="navH4">Explore</h4>
               </div>
-              <h4 class="navMenu devide">|</h4>
+              <h4 class="navMenu devide navH4">|</h4>
               <!-- = dropdown -->
               <div class="dp">
                 <!-- = dropbtn -->
-                <h4 class="navMenu" id="recipes"><a href="#">Recipes</a></h4>
+                <h4 class="navMenu" id="recipes">
+                  <a href="#" class="navH4">Recipes</a>
+                </h4>
                 <!-- = dropdown-content -->
                 <div class="dropdown">
                   <a href="../recipe-emir.html">Emir</a>
                   <a href="./Kento/recipe-kento.html">Kento</a>
-                  <a href="./mauricio/index.html">Mauricio</a>
+                  <a href="./recipe-estrogonofe.html">Mauricio</a>
                   <a href="../recipe-megumi.html">Megumi</a>
                 </div>
               </div>
-              <h4 class="navMenu"><a href="#">About Us</a></h4>
+              <h4 class="navMenu"><a href="#" class="navH4">About Us</a></h4>
             </div>
             <div class="title-in-nav">
               <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
@@ -137,14 +141,12 @@
         </div>
         <div class="img-wrap">
           <a href="Kento/recipe-kento.html"
-            ><img
-              src="images/yaki-udon-img.jpeg"
+            ><img src="images/yaki-udon-img.jpeg"
           /></a>
         </div>
         <div class="img-wrap">
           <a href="recipe-estrogonofe.html"
-            ><img
-              src="images/recipes/beef-strogonoff-main.jpeg"
+            ><img src="images/recipes/beef-strogonoff-main.jpeg"
           /></a>
         </div>
         <div class="img-wrap">
@@ -164,7 +166,7 @@
       <button id="up">
         <i class="fa-solid fa-arrow-up"></i>
       </button>
-     </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
