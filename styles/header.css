@@ -86,6 +86,7 @@ header {
   /* display: none; */
   visibility: hidden;
   transform: translateY(-200%);
+  background: var(--colorBackground);
 }
 
 .dp:hover .dropdown {
@@ -129,11 +130,15 @@ header {
   display: block;
 }
 
+.title-in-nav > h4 {
+  cursor: pointer;
+}
+
 /* test */
-.main {
+/* .main {
   padding-top: 112px;
 }
 
 #target {
   padding-top: 200px;
-}
+} */
