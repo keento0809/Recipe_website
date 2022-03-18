@@ -128,3 +128,23 @@
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+#up{
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  margin-left: 1500px;
+  background-color: lightgray;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+}
+
+#up:hover{
+  cursor: pointer;
+  background-color: gray;
+  
+}
