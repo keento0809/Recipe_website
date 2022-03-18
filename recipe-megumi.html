@@ -10,8 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <!-- CSS Reset -->
   <link rel="stylesheet" href="styles/reset.css">
-  <!-- <link rel="stylesheet" href="mauricio/reset.css"> -->
-  <!-- <link rel="stylesheet" href="mauricio/style.css"> -->
   <!-- Our Styles -->
   <link rel="stylesheet" href="styles/recipe-and-footer.css">
   <link rel="stylesheet" href="styles/header.css">
@@ -47,12 +45,42 @@
     <article>
       <h2 class="recipe-title">Imoni(芋煮) - Yamagata version -</h2>
       <p class="recipe-summary">
-        Do you want to know the best hot pot dish in Japan? Today, I will tell you about the special one which is one of the traditional & popular hot pots in Tohoku region (= northeast part of Japan)! It is called "Imoni (simmered taro)", which is a soysauce based soup dish with sliced beef and some veggies. We often have the imoni party every fall in the park or riverside. 
-        <a href="https://www.kurashiru.com/recipes/82cfd750-9a64-4639-9794-803655818f46" target="_blank">Reference recipe website: kurashiru(クラシル)</a>
+        Do you want to know the best hot pot dish in Japan? Today, I will tell you about the special one which is one of the traditional & popular hot pots in Tohoku region (= northeast part of Japan)! It is called "Imoni (simmered taro)", which is a soysauce based soup dish with sliced beef and some veggies. We often have the imoni party every fall in the park or riverside. <br />
+        <a href="https://www.kurashiru.com/recipes/82cfd750-9a64-4639-9794-803655818f46" target="_blank">*Reference recipe website: kurashiru(クラシル)</a>
       </p>
       <p class="recipe-author">
-        By: Megumi Akama
+        By <strong id="author-link">Megumi Akama</strong>
       </p>
+      <!-- Tooltip markup starts here -->
+      <div id="mauricio-about" class="about-author" role="dialog" data-toggler="author-link">
+        <div class="about-author-inner">
+          <div class="about-author-pic">
+            <img src="images/authors/megumi1.JPG" alt="Recipe author: Megumi" />
+          </div>
+          <section class="about">
+            <h4>Megumi Akama</h4>
+            <section class="about-social-medias">
+              <a href="https://www.facebook.com/megumi.akama.75" target="_blank">
+                <img src="images/facebook-icon-red.svg" alt="Facebook" />
+              </a>
+              <a href="https://twitter.com/Megumisun3" target="_blank">
+                <img src="images/twitter-icon-red.svg" alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com/hige_sugar9/" target="_blank">
+                <img src="images/instagram-icon-red.svg" alt="Instagram" />
+              </a>
+            </section>
+            <p>
+              A curious person living in Vancouver, studying web development at CICCC.
+              Her favorite meal is <a href="https://sanyofoodsamerica.com/products/sapporo-ichiban-original" target="_blank" class="fave-meal">Sapporo Ichiban</a>.
+            </p>
+          </section>
+          <div class="close-button-container">
+            <button type="button" class="close-button" title="Close About Author" data-close-dialog>[Close]</button>
+          </div>
+        </div>
+      </div>
+      <!-- Tooltip markup ends here -->
       <section class="recipe-preview">
         <figure class="recipe-figure" >
           <img class="imoni-img" src="images/megumi-imoni.jpg" alt="Imoni hot pot">
@@ -193,7 +221,10 @@
 
   <!-- scripts are loaded after everything -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="scripts/about-author-tooltip.js"></script>
   <script src="recipe-megumi.js"></script>
-  <script src="index.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="receipe-emir.js"></script>
+  <!-- <script src="index.js"></script> -->
 </body>
 </html>
