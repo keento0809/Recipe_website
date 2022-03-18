@@ -16,11 +16,35 @@
   <!-- Our styles -->
   <link rel="stylesheet" href="styles/recipe-and-footer.css">
   <link rel="stylesheet" href="styles/recipe-estrogonofe.css">
+  <link rel="stylesheet" href="styles/header.css">
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Header will come here! -->
+  <header>
+    <div class="header-container">
+      <div class="header-wrapper">
+        <section class="title-section showing">
+          <h2>Global Kitchen</h2>
+        </section>
+        <section class="nav-section">
+          <div class="menuBar"><span></span><span></span><span></span></div>
+          <div class="nav-menu">
+            <h4 class="navMenu">Explore</h4>
+            <h4 class="navMenu devide">|</h4>
+            <h4 class="navMenu">Recipes</h4>
+            <h4 class="navMenu">About Us</h4>
+          </div>
+          <div class="title-in-nav">
+            <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
+            <h4>Global Kitchen</h4>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
   <div class="recipe-container">
     <article>
       <h2 class="recipe-title">Estrogonofe (Brazilian Beef Stroganoff)</h2>
@@ -243,5 +267,6 @@
   <!-- scripts are loaded after everything -->
   <script src="scripts/jquery-3.6.0.min.js"></script>
   <script src="scripts/about-author-tooltip.js"></script>
+  <script src="scripts/header.js"></script>
 </body>
 </html>

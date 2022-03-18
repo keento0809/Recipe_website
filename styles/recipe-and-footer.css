@@ -24,7 +24,7 @@ body {
 
 .recipe-container {
   max-width: 1310px;
-  padding: 0 64px;
+  padding: 96px 64px 0 64px;
   margin: 0 auto;
 }
 
