@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .modal__container {
@@ -56,6 +57,7 @@
   overflow-y: auto;
   box-sizing: border-box;
   cursor: pointer;
+  z-index: 10;
 }
 
 .modal__container > img {
