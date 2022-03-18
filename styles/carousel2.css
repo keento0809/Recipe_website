@@ -1,9 +1,9 @@
-.carousel-hr {
+/* .carousel-hr {
   border-style: none;
   border-top: 2px double #41424c;
   border-width: 5px;
   width: 100px;
-}
+} */
 
 .carousel {
   padding-top: 50px;
@@ -38,7 +38,7 @@
 
 .carousel button {
   position: absolute;
-  top: 900px;
+  top: 1000px;
   height: 50px;
   width: 30px;
   border-radius: 10px;
@@ -70,6 +70,7 @@
 
 .carousel-heading {
   font-size: 40px;
+  padding-bottom: 30px;
 }
 
 .carousel-description {
