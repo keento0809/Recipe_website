@@ -5,11 +5,8 @@ const nav = document.querySelector(".nav-section");
 const navMenu = document.querySelector(".nav-menu");
 const titleInNav = document.querySelector(".title-in-nav");
 
-console.log("HELLO Header.js");
-
 // Hook up the event
 window.onscroll = function (e) {
-  console.log("scrolling!!");
   if (this.scrollY < 100) {
     title.classList.add("showing");
     titleInNav.classList.remove("showing");
@@ -24,6 +21,5 @@ window.onscroll = function (e) {
     navMenu.classList.add("hidden");
     titleInNav.classList.add("showing");
   }
-  console.log(this.oldScroll > this.scrollY);
   this.oldScroll = this.scrollY;
 };
