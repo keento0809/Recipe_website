@@ -44,6 +44,7 @@
 }
 .umeshu{
     width: 25%;
+    cursor: pointer;
 }
 
 .hero-container p{
@@ -60,6 +61,7 @@
 }
 .caipirinha{
     width: 25%;
+    cursor: pointer;
 }
 .uc{ 
     display: flex;
@@ -71,4 +73,9 @@
 }
 .raki{
     width: 25%;
+    cursor: pointer;
+}
+
+.foti{
+    cursor: pointer;
 }
