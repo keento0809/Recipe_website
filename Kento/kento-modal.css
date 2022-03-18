@@ -2,6 +2,11 @@
   padding-top: 96px;
 }
 
+.ref > a {
+  color: blue;
+  text-decoration: underline;
+}
+
 /* img */
 .recipe-figure > img {
   cursor: pointer;
@@ -129,7 +134,7 @@
   will-change: transform;
 }
 
-#up{
+#up {
   opacity: 0.3;
   position: fixed;
   bottom: 50px;
@@ -143,8 +148,7 @@
   border: none;
 }
 
-#up:hover{
+#up:hover {
   cursor: pointer;
   background-color: gray;
-  
 }
