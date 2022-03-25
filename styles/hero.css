@@ -7,11 +7,11 @@
     margin-bottom: 100px;
 }
 
-.baslik{
+.sake-div{
     padding-right: 200px;
 }
 
-.h1{
+.sake-question{
     margin-right: 700px;
     margin-top: -25px;
     background-color: white;
@@ -20,22 +20,22 @@
     font-weight: bold;
 }
 
-.yazi{
+.first-div{
     position: absolute;
 }
 
-.yazi1{
+.sake-info{
     width: 50%;
     margin-top: 10px;
 }
 
-.iki{
+.drinks{
     display: flex;
     flex-direction: column;
     border-left: 1.5px solid black;
 }
 
-.bir{
+.umeshu-div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,6 +44,7 @@
 }
 .umeshu{
     width: 25%;
+    cursor: pointer;
 }
 
 .hero-container p{
@@ -51,7 +52,7 @@
     letter-spacing: 1px;
     margin-left: 10px;
 }
-.ikii{
+.caipirinha-div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,8 +61,9 @@
 }
 .caipirinha{
     width: 25%;
+    cursor: pointer;
 }
-.uc{ 
+.raki-div{ 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,4 +73,9 @@
 }
 .raki{
     width: 25%;
+    cursor: pointer;
+}
+
+.hero-main-div{
+    cursor: pointer;
 }
