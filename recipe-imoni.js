@@ -1,21 +1,21 @@
 $(function(){
-  $(".modal-for-imoni").hide();
-  $(".register-imoni").click(function(){
-    $(".modal-for-imoni").fadeIn(1500);
+  $(".wrapper__modal—imoni").hide();
+  $(".btn—modal").click(function(){
+    $(".wrapper__modal—imoni").fadeIn(1500);
     $("body").css("background-color", "rgba(105, 105, 105, 0.8)");
     $(".event-video").css("opacity", 0.5);
-    $(".googlemap-yamagata").css("opacity", 0.5);
-    $(".imoni-img").css("opacity", 0.5);
-    $(".curry-udon-img").css("opacity", 0.5);
+    $(".wrapper__map").css("opacity", 0.5);
+    $(".imoni-main").css("opacity", 0.5);
+    $(".imoni-curry").css("opacity", 0.5);
 
   });
-  $(".close-imoni-modal").click(function(){
-    $(".modal-for-imoni").fadeOut(1500);
+  $(".btn—center").click(function(){
+    $(".wrapper__modal—imoni").fadeOut(1500);
     $("body").css("background-color", "rgba(255, 255, 255, 1)");
     $(".event-video").css("opacity", 1);
-    $(".googlemap-yamagata").css("opacity", 1);
-    $(".imoni-img").css("opacity", 1);
-    $(".curry-udon-img").css("opacity", 1);
+    $(".wrapper__map").css("opacity", 1);
+    $(".imoni-main").css("opacity", 1);
+    $(".imoni-curry").css("opacity", 1);
   });
 
 });
