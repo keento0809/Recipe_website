@@ -84,6 +84,10 @@ header {
   transition: all 0.2s cubic-bezier(0, 1, 0.1, 0.98);
 }
 
+.explore {
+  padding-bottom: 0;
+}
+
 .header__dropdown {
   position: absolute;
   top: 100%;
