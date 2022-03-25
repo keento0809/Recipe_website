@@ -5,6 +5,15 @@ const nav = document.querySelector(".header__nav-section");
 const navMenu = document.querySelector(".header__navList");
 const titleInNav = document.querySelector(".header__title-in-nav");
 
+// reduce the frequency of scroll event
+let timeout;
+
+window.addEventListener("scroll", function () {
+  if (timeout) return;
+
+  // timeout = set
+});
+
 // Hook up the event
 window.onscroll = function (e) {
   if (this.scrollY < 100) {
