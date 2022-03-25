@@ -1,9 +1,9 @@
 // Get DOM
-const title = document.querySelector(".title-section");
-const nav = document.querySelector(".nav-section");
+const title = document.querySelector(".header__title-section");
+const nav = document.querySelector(".header__nav-section");
 
-const navMenu = document.querySelector(".nav-menu");
-const titleInNav = document.querySelector(".title-in-nav");
+const navMenu = document.querySelector(".header__navList");
+const titleInNav = document.querySelector(".header__title-in-nav");
 
 // Hook up the event
 window.onscroll = function (e) {
