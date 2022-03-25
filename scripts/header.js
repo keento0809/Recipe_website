@@ -8,27 +8,45 @@ const titleInNav = document.querySelector(".header__title-in-nav");
 // reduce the frequency of scroll event
 let timeout;
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function (e) {
   if (timeout) return;
 
-  // timeout = set
+  timeout = setTimeout(() => {
+    timeout = 0;
+
+    if (this.scrollY < 100) {
+      title.classList.add("showing");
+      titleInNav.classList.remove("showing");
+      navMenu.classList.remove("hidden");
+      return;
+    }
+    title.classList.remove("showing");
+    if (this.oldScroll > this.scrollY) {
+      titleInNav.classList.remove("showing");
+      navMenu.classList.remove("hidden");
+    } else {
+      navMenu.classList.add("hidden");
+      titleInNav.classList.add("showing");
+    }
+    this.oldScroll = this.scrollY;
+  }, 500);
 });
 
 // Hook up the event
-window.onscroll = function (e) {
-  if (this.scrollY < 100) {
-    title.classList.add("showing");
-    titleInNav.classList.remove("showing");
-    navMenu.classList.remove("hidden");
-    return;
-  }
-  title.classList.remove("showing");
-  if (this.oldScroll > this.scrollY) {
-    titleInNav.classList.remove("showing");
-    navMenu.classList.remove("hidden");
-  } else {
-    navMenu.classList.add("hidden");
-    titleInNav.classList.add("showing");
-  }
-  this.oldScroll = this.scrollY;
-};
+// window.onscroll = function (e) {
+//   if (this.scrollY < 100) {
+//     title.classList.add("showing");
+//     titleInNav.classList.remove("showing");
+//     navMenu.classList.remove("hidden");
+//     return;
+//   }
+//   title.classList.remove("showing");
+//   if (this.oldScroll > this.scrollY) {
+//     titleInNav.classList.remove("showing");
+//     navMenu.classList.remove("hidden");
+//   } else {
+//     navMenu.classList.add("hidden");
+//     titleInNav.classList.add("showing");
+//   }
+//   this.oldScroll = this.scrollY;
+// };
