@@ -17,59 +17,55 @@
     ></script>
     <!-- CDN of AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/recipe-and-footer.css" />
-    <link rel="stylesheet" href="kento-modal.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link
-      rel="shortcut icon"
-      href="../mauricio/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/recipe-and-footer.css" />
+    <link rel="stylesheet" href="./recipe-kento.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
 "></script>
   </head>
   <body>
     <!-- HEADER -->
-  <header>
-    <div class="header-container">
-      <div class="header-wrapper">
-        <section class="title-section showing">
-          <h2><a href="../index.html">Global Kitchen</a></h2>
-        </section>
-        <section class="nav-section">
-          <div class="menuBar navH4">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="nav-menu">
-            <div class="navMenu">
-              <h4 class="navH4">Explore</h4>
+    <header>
+      <div class="header__container">
+        <div class="header__wrapper">
+          <section class="header__title-section showing">
+            <h2><a href="../index.html">Global Kitchen</a></h2>
+          </section>
+          <section class="header__nav-section">
+            <div class="header__menuBar">
+              <span></span><span></span><span></span>
             </div>
-            <h4 class="navMenu devide navH4">|</h4>
-            <!-- = dropdown -->
-            <div class="dp">
-              <!-- = dropbtn -->
-              <h4 class="navMenu" id="recipes">
-                <a href="#" class="navH4">Recipes</a>
-              </h4>
-              <!-- = dropdown-content -->
-              <div class="dropdown">
-                <a href="../recipe-emir.html">Manti</a>
-                <a href="recipe-kento.html">Yaki-Udon</a>
-                <a href="../recipe-estrogonofe.html">Beef Stroganoff</a>
-                <a href="../recipe-megumi.html">Imoni</a>
+            <div class="header__navList">
+              <div class="header__navMenu">
+                <h4>Explore</h4>
               </div>
+              <h4 class="header__navMenu devide">|</h4>
+              <!-- = dropdown -->
+              <div class="header__dropdown-wrapper">
+                <!-- = dropbtn -->
+                <h4 class="header__navMenu" id="recipes">
+                  <a href="#">Recipes</a>
+                </h4>
+                <!-- = dropdown-content -->
+                <div class="header__dropdown">
+                  <a href="./recipe-emir.html">Manti</a>
+                  <a href="recipe-kento.html">Yaki-Udon</a>
+                  <a href="../recipe-estrogonofe.html">Beef Stroganoff</a>
+                  <a href="../recipe-megumi.html">Imoni</a>
+                </div>
+              </div>
+              <h4 class="header__navMenu"><a href="#">About Us</a></h4>
             </div>
-            <h4 class="navMenu"><a href="#" class="navH4">About Us</a></h4>
-          </div>
-          <div class="title-in-nav">
-            <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
-            <h4><a href="#">Global Kitchen</a></h4>
-          </div>
-        </section>
+            <div class="header__title-in-nav">
+              <!-- <div class="menuBar"><span></span><span></span><span></span></div> -->
+              <h4><a href="#">Global Kitchen</a></h4>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <div class="recipe-container">
       <article>
@@ -91,10 +87,6 @@
           ever go out to an Izakaya (Japanese pubs) you’ll often see Yaki Udon
           on the menu.
         </p>
-        <!-- <span>References: </span
-        ><a href="https://choosingchia.com/yaki-udon/"
-          >https://choosingchia.com/yaki-udon/</a
-        > -->
         <p
           class="recipe-author"
           data-aos="zoom-out-right"
@@ -162,13 +154,13 @@
             >
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-2.jpg"
-                alt=""
+                alt="step1"
                 data-aos="flip-right"
                 data-aos-duration="2500"
               />
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-3.jpg"
-                alt=""
+                alt="step1"
                 data-aos="flip-left"
                 data-aos-duration="2500"
               />
@@ -185,13 +177,13 @@
             <section class="image-section">
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-4.jpg"
-                alt=""
+                alt="step2"
                 data-aos="flip-right"
                 data-aos-duration="2500"
               />
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-5.jpg"
-                alt=""
+                alt="step2"
                 data-aos="flip-left"
                 data-aos-duration="2500"
               />
@@ -209,13 +201,13 @@
             <section class="image-section">
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-6.jpg"
-                alt=""
+                alt="step3"
                 data-aos="flip-right"
                 data-aos-duration="2500"
               />
               <img
                 src="https://choosingchia.com/jessh-jessh/uploads/2021/10/Yaki-Udon-Stir-Fry-8.jpg"
-                alt=""
+                alt="step3"
                 data-aos="flip-left"
                 data-aos-duration="2500"
               />
@@ -264,8 +256,8 @@
           aria-labelledby="modal-1-title"
         >
           <img
-            src="../images/yaki-udon-img.jpeg"
-            alt=""
+            src="./images/yaki-udon-img.jpeg"
+            alt="yaki-udon"
             width="100%"
             height="auto"
           />
@@ -286,8 +278,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- <script src="../mauricio/index.js"></script> -->
-    <script src="../scripts/header.js"></script>
-    <script src="kento-index.js"></script>
-    <script src="/receipe-emir.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./recipe-yakiUdon.js"></script>
+    <script src="receipe-emir.js"></script>
   </body>
 </html>

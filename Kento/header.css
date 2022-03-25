@@ -118,12 +118,12 @@ header {
   border-bottom: 1px solid #000;
 }
 
-.nav-menu,
+.navList,
 .title-in-nav {
   display: flex;
 }
 
-.nav-menu.hidden {
+.navList.hidden {
   display: none;
 }
 

@@ -42,3 +42,5 @@ window.onscroll = function (e) {
 
 dp.addEventListener("mouseover", checkHandler);
 dp.addEventListener("mouseout", leaveHandler);
+
+// I definitely reduce the amount of scroll
