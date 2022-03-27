@@ -72,7 +72,7 @@
 
 .wrapper__modal—imoni {
   width: 800px;
-  height: 200px;
+  height: 250px;
   text-align: center;
   line-height: 1.5;
   background-color: white;
@@ -86,6 +86,22 @@
   padding: 20px 20px;
 }
 
+.catch__loader {
+  width: 30px;
+  height: 30px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #ff6347;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+/*   50% { transform: rotate(180deg);} */
+  100% { transform: rotate(360deg); }
+}
+
 .btn—center {
   padding: 10px;
   /* font-size: 1.1rem; */
@@ -94,6 +110,7 @@
   background-color: rgba(0, 0, 0, .8);
   color: white;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 .btn—center:hover {
