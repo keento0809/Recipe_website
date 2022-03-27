@@ -1,4 +1,5 @@
 $(function(){
+  //for Modal
   $(".wrapper__modal—imoni").hide();
   $(".btn—modal").click(function(){
     $(".wrapper__modal—imoni").fadeIn(1500);
@@ -18,6 +19,11 @@ $(function(){
     $(".imoni-curry").css("opacity", 1);
   });
 
+  //for FadeIn
+  $("body").hide().fadeIn(2000);
+
+  //for Loader
+  
 });
 
 var btn = $('#up');
