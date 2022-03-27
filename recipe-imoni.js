@@ -20,10 +20,7 @@ $(function(){
   });
 
   //for FadeIn
-  $("body").hide().fadeIn(2000);
-
-  //for Loader
-  
+  $(".recipe-container").hide().fadeIn(3000);
 });
 
 var btn = $('#up');
